@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: sticky; /* Sticky navbar */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ccff; /* Hover color for links */
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Colored section highlights */
+#about { background-color: #1a1a1a; }
+#skills { background-color: #222; }
+#projects { background-color: #1a1a1a; }
+#resume { background-color: #222; }
+#contact { background-color: #1a1a1a; }
+
+/* Hover effect on sections */
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #00ccff;
+}
+
+/* About Image */
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Skills Section - Centered & Styled */
+#skills ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    display: flex; /* Flexbox for centering */
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap to next line if needed */
+    gap: 15px;
+}
+
+#skills li {
+    background-color: #00ccff;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00ccff;
+}
+
+/* Projects */
+.project {
+    margin: 15px auto;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ccff;
+}
+
+/* Resume Link */
+#resume a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00ccff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#resume a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Contact Icons */
+#contact i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #00ccff; /* Light blue icons */
+}
+
+#contact a {
+    color: #00ccff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 20px;
+    }
+
+    #about img {
+        width: 120px;
+    }
+
+    /* Skills Flexbox for smaller screens */
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills li {
+        margin-bottom: 10px;
+    }
+}
